@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Med-Manager</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_to_med_manager">Welcome\nTo\nMed-Manager</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="log_out">Log Out</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="describe_medication">Describe medication…</string>
+    <string name="intervals">Intake intervals</string>
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+    <string name="notification_chanel_name">MyNotificationChanel</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.cyclon.com.med_manager.ProfilePage"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/profile_image"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/no_profile_picture"
+        app:civ_border_color="#03555e"
+        app:civ_border_width="2dp"
+        android:onClick="changeDp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:tint="@color/white"
+        android:id="@+id/edit_dp"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_field"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/profile_image">
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_name"
+            tools:text="Name Surname"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_email"
+        tools:text="email"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_below="@+id/name_field"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:tint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/edit_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_alignBaseline="@+id/edit_ok"
+        android:layout_alignBottom="@+id/edit_ok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/edit_cancel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/edit_ok"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_below="@+id/profile_email"
+        android:layout_toRightOf="@+id/edit_cancel"
+        android:layout_toEndOf="@+id/edit_cancel" />
+
+</RelativeLayout>
